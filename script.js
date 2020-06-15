@@ -22,20 +22,28 @@ function createText() {
     });
 }
 
-console.log(checkTexts);
-
-// p.textContent = textLists[0];
-
 document.addEventListener("keydown", keyDown);
+document.addEventListener("keyup", keyUp);
 
 function keyDown(e) {
-    // console.log(e.key);
     if (e.key == checkTexts[0].textContent) {
-        console.log("正解");
         checkTexts[0].className = "add-blue";
 
         checkTexts.shift();
 
         if (!checkTexts.length) createText();
+    }
+    var key = e.key;
+    var div = document.getElementById(key);
+    if (div != null) {
+        div.classList.add("key-pressed");
+    }
+}
+
+function keyUp(e) {
+    var key = e.key;
+    var div = document.getElementById(key);
+    if (div != null) {
+        div.classList.remove("key-pressed");
     }
 }
