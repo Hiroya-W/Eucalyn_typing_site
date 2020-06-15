@@ -26,6 +26,11 @@ function createText() {
         return span;
     });
     checkTexts[0].classList.add("input");
+    var key = checkTexts[0].textContent;
+    var div = document.getElementById(key);
+    if (div != null) {
+        div.classList.add("next-key");
+    }
 }
 
 document.addEventListener("keydown", keyDown);
@@ -38,6 +43,12 @@ function keyDown(e) {
             checkTexts[0].classList.remove("input");
         }
 
+        var key = checkTexts[0].textContent;
+        var div = document.getElementById(key);
+        if (div != null && div.classList.contains("next-key")) {
+            div.classList.remove("next-key");
+        }
+
         checkTexts.shift();
 
         if (!checkTexts.length) {
@@ -45,6 +56,12 @@ function keyDown(e) {
         }
         else {
             checkTexts[0].classList.add("input");
+
+            var key = checkTexts[0].textContent;
+            var div = document.getElementById(key);
+            if (div != null) {
+                div.classList.add("next-key");
+            }
         }
     }
     var key = e.key;

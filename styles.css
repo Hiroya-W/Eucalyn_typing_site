@@ -30,6 +30,7 @@ span{
     color: white;
 }
 
+
 body{
     background: url(background.jpg) center center / cover no-repeat fixed;
 }
@@ -75,6 +76,10 @@ body * {
 .key:hover {
     background-color: rgb(70,70,70);
     color: rgb(243, 243, 243);
+}
+
+.next-key{
+    background-color: #66ccff;
 }
 
 .delete {
