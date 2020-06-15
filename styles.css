@@ -13,7 +13,7 @@
 }
 
 span{
-    /* transition: all 300ms 0s ease; */
+    /* font-family: Inconsolata; */
 }
 
 .add-blue{
@@ -30,11 +30,15 @@ span{
     color: white;
 }
 
+body{
+    background: url(background.jpg) center center / cover no-repeat fixed;
+}
+
 body * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Noto Sans, Arial, Helvetica, sans-serif;
+    font-family: Inconsolata,Noto Sans, Arial, Helvetica, sans-serif;
 }
 
 .keyboard-base {
