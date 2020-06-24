@@ -3,11 +3,112 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- OGP information -->
+    <meta property="og:title" content="Eucalyn配列練習サイト" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hiroya-w.github.io/works/typing_site/index.html" />
+    <meta property="og:image" content="img/ogp.png" />
+    <meta property="og:site_name" content="Eucalyn配列練習サイト" />
+    <meta property="og:description" content="Eucalyn配列練習サイト" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@Hyuyu_kun" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <title>Eucalyn配列練習サイト | Works</title>
+
+    <!-- stylesheet -->
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap" rel="stylesheet">
+    <!-- jquery source -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" />
 </head>
 
 <body>
-    <p id="text"></p>
+    <div>
+        <p id="word"></p>
+        <p id="roma"></p>
+    </div>
+    <div id="keyboard-base" class="keyboard-base">
+        <div class="key">~</div>
+        <div class="key">1</div>
+        <div class="key">2</div>
+        <div class="key">3</div>
+        <div class="key">4</div>
+        <div class="key">5</div>
+        <div class="key">6</div>
+        <div class="key">7</div>
+        <div class="key">8</div>
+        <div class="key">9</div>
+        <div class="key">0</div>
+        <div class="key">-</div>
+        <div class="key">+</div>
+        <div class="key delete">Delete</div>
+        <div class="key tab">Tab</div>
+        <div class="key" id="q">Q</div>
+        <div class="key" id="w">w</div>
+        <div class="key" id="e">,</div>
+        <div class="key" id="r">.</div>
+        <div class="key" id="t">;</div>
+        <div class="key" id="y">M</div>
+        <div class="key" id="u">R</div>
+        <div class="key" id="i">D</div>
+        <div class="key" id="o">Y</div>
+        <div class="key" id="p">P</div>
+        <div class="key">[</div>
+        <div class="key">]</div>
+        <div class="key backslash">\</div>
+        <div class="key capslock">CapsLock</div>
+        <div class="key" id="a">A</div>
+        <div class="key" id="s">O</div>
+        <div class="key" id="d">E</div>
+        <div class="key" id="f">I</div>
+        <div class="key" id="g">U</div>
+        <div class="key" id="h">G</div>
+        <div class="key" id="j">T</div>
+        <div class="key" id="k">K</div>
+        <div class="key" id="l">S</div>
+        <div class="key" id=";">N</div>
+        <div class="key" id="'">'</div>
+        <div class="key return" id="return">Return</div>
+        <div class="key leftshift" id="shift">Shift</div>
+        <div class="key" id="z">Z</div>
+        <div class="key" id="x">X</div>
+        <div class="key" id="c">C</div>
+        <div class="key" id="v">V</div>
+        <div class="key" id="b">F</div>
+        <div class="key" id="n">B</div>
+        <div class="key" id="m">H</div>
+        <div class="key" id=",">J</div>
+        <div class="key" id=".">L</div>
+        <div class="key" id="/">/</div>
+        <div class="key rightshift">Shift</div>
+        <div class="key leftctrl">Ctrl</div>
+        <div class="key">Alt</div>
+        <div class="key command">Command</div>
+        <div class="key space" id="space">Space</div>
+        <div class="key command">command</div>
+        <div class="key">Alt</div>
+        <div class="key">Ctrl</div>
+        <div class="key">Fn</div>
+    </div>
+
+    <div class="readme">
+        <div class="box18">
+            <!-- <h1># Eucalyn配列練習サイト</h1> -->
+            <h1># Eucalyn配列練習サイト</h1>
+            <p>
+                　このサイトでは、QWERTY配列のまま、Eucalyn配列を試したり、練習したりすることが出来ます。
+            </p>
+            <br>
+            <h1># How to use</h1>
+            <p>
+                　表示されているキーボードに合わせて、ハイライトされている位置のキーを入力してください。
+            </p>
+        </div>
+    </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
 

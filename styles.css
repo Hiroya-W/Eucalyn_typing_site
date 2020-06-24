@@ -1,15 +1,174 @@
-#text{
+#word{
     font-size: 4em;
     font-weight: bold;
-    color: #666;
+    color: #444;
+    text-align: center;
+}
+
+#roma{
+    font-size: 3em;
+    font-weight: bold;
+    color: #444;
     text-align: center;
 }
 
 span{
-    transition: all 300ms 0s ease;
+    /* font-family: Inconsolata; */
 }
 
 .add-blue{
     font-size: 0.5em;
     color: #00f;
+}
+
+.done{
+    color: #888;
+}
+
+.input{
+    background-color: black;
+    color: white;
+}
+
+
+
+body{
+    background: url(background.jpg) center center / cover no-repeat fixed;
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inconsolata,Noto Sans, Arial, Helvetica, sans-serif;
+}
+
+.keyboard-base {
+    max-width: 1085px;
+    padding: 20px;
+    position: relative;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    margin-top: 50px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: rgb(197, 197, 197);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(30, 30px);
+    grid-template-rows: repeat(5, 60px);
+    grid-gap: 5px;
+}
+
+
+.key {
+    background-color: rgb(243, 243, 243);
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    grid-column: span 2;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 17px;
+}
+
+.key-pressed{
+    background-color: rgb(70,70,70);
+    color: rgb(243, 243, 243);
+}
+
+.key:hover {
+    background-color: rgb(70,70,70);
+    color: rgb(243, 243, 243);
+}
+
+.next-key{
+    background-color: #66ccff;
+}
+
+.delete {
+    grid-column: span 4;
+}
+
+.tab {
+    grid-column: span 3;
+}
+
+.backslash {
+    grid-column: span 3;
+}
+
+.capslock {
+    grid-column: span 4;
+}
+
+.return {
+    grid-column: span 4;
+}
+
+.leftshift {
+    grid-column: span 5;
+}
+
+.rightshift {
+    grid-column: span 5;
+}
+
+.leftctrl {
+    grid-column: span 3;
+}
+
+.command {
+    grid-column: span 3;
+    font-size: 14px;
+}
+
+.space {
+    grid-column: span 13;
+}
+
+
+.readme{
+    position: relative;
+    max-width:1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.box18{
+    margin:2em 0;
+    position:relative;
+    padding: 0.25em 1em;
+    border: solid 2px #ffcb8a;
+    border-radius: 3px 0 3px 0;
+}
+.box18:before,.box18:after
+{
+    content: '';
+    position: absolute;
+    width:10px;
+    height: 10px;
+    border: solid 2px #ffcb8a;
+    border-radius: 50%;
+}
+.box18:after {
+    top:-12px;
+    left:-12px;
+}
+.box18:before {
+    bottom:-12px;
+    right:-12px;
+}
+.box18 *{
+    font-family: Noto Sans, Arial, Helvetica, sans-serif;
+}
+
+.box18 h1{
+    font-size: 2.5em;
+}
+.box18 p {
+    font-size: 1.5em;
+    margin: 0; 
+    padding: 0;
 }
