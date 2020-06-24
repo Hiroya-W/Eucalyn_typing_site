@@ -31,6 +31,7 @@ span{
 }
 
 
+
 body{
     background: url(background.jpg) center center / cover no-repeat fixed;
 }
@@ -45,10 +46,13 @@ body * {
 .keyboard-base {
     max-width: 1085px;
     padding: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    margin-top: 50px;
+    margin-left:auto;
+    margin-right:auto;
     background-color: rgb(197, 197, 197);
     border-radius: 10px;
     display: grid;
@@ -121,4 +125,50 @@ body * {
 
 .space {
     grid-column: span 13;
+}
+
+
+.readme{
+    position: relative;
+    max-width:1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.box18{
+    margin:2em 0;
+    position:relative;
+    padding: 0.25em 1em;
+    border: solid 2px #ffcb8a;
+    border-radius: 3px 0 3px 0;
+}
+.box18:before,.box18:after
+{
+    content: '';
+    position: absolute;
+    width:10px;
+    height: 10px;
+    border: solid 2px #ffcb8a;
+    border-radius: 50%;
+}
+.box18:after {
+    top:-12px;
+    left:-12px;
+}
+.box18:before {
+    bottom:-12px;
+    right:-12px;
+}
+.box18 *{
+    font-family: Noto Sans, Arial, Helvetica, sans-serif;
+}
+
+.box18 h1{
+    font-size: 2.5em;
+}
+.box18 p {
+    font-size: 1.5em;
+    margin: 0; 
+    padding: 0;
 }
