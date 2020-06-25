@@ -72,6 +72,10 @@ body * {
     padding-top: 17px;
 }
 
+.key-home{
+    text-decoration: underline;
+}
+
 .key-pressed{
     background-color: rgb(70,70,70);
     color: rgb(243, 243, 243);
